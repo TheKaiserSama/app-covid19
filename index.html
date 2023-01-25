@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <img class="banner" src="/resources/img/imagen.png" alt="Imagen" >
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <span><b>COVID</b></span>
+        </li>
+        <li>
+          <a href="#">Visualizacion datos</a>
+        </li>
+        <li>
+          <a href="#">Nuevo registro</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="widgets">
+      <div class="casos-recuperados">
+        <img class="casos-recuperados-img" src="/resources/icons/usuario.png" alt="User" >
+        <p class="casos-recuperados-text">Casos recuperados</p>
+        <p class="casos-recuperados-count"> 0 </p>
+      </div>
+
+      <div class="casos-fallecidos">
+        <img class="casos-fallecidos-img" src="/resources/icons/usuario.png" alt="User" >
+        <p class="casos-fallecidos-text">Casos fallecidos</p>
+        <p class="casos-fallecidos-count"> 0 </p>
+      </div>
+
+      <div class="casos-na">
+        <img class="casos-na-img" src="/resources/icons/usuario.png" alt="User" >
+        <p class="casos-na-text">Casos N/A</p>
+        <p class="casos-na-count"> 0 </p>
+      </div>
+
+    </div>
+    <div class="filters">
+      <label for="ciudades"> Ciudades</label>
+      <select name="select" id="ciudades"> 
+        <option value="" selected>Selecciones una opción</option>
+      </select>
+      <label for="tipo-recuperacion" class="tipo-recuperacion">Tipo recuperación</label>
+      <select name="select" id="tipo-recuperacion">
+        <option value="" selected>Selecciones una opción</option>
+      </select>    
+
+    </div>
+
+    <div class="content" > 
+      <table class="tabla-pacientes" >
+        <tr id="encabezados">
+          <th class="table-header">Ciudad</th>
+          <th class="table-header">Edad</th>
+          <th class="table-header">Sexo</th>
+          <th class="table-header">Reparado</th>
+          <th class="table-header">Tipo reparación</th> 
+          <th class="table-header">Fecha inicio</th>  
+          <th class="table-header">Fecha diagnostico</th>
+          <th class="table-header">Tiempo diagnostico</th>  
+        </tr>
+      </table>
+      <div class="paginacion">
+        <button id="anterior" disabled>Anterior</button>
+        <div class="indicadores">
+          <div id = "pagina">1</div>
+          <div>de</div>
+          <div id = "total">0</div>
+        </div>
+        <button id = "siguiente">siguiente</button>
+      </div>
+    </div>
+
+    
+
+  </div>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+.banner{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+nav ul {  
+  list-style: none;
+  display: flex;
+
+}
+
+nav ul li a, span {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  align-items: center;
+}
+a:hover {
+  background-color: rgb(140, 149, 157);
+}
+
+/* widgets*/
+.widgets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.casos-recuperados {
+  background-color: rgb(69, 55, 85) ;
+}
+
+.casos-fallecidos {
+  background-color: rgb(142, 31, 62) ;
+}
+
+.casos-na {
+  background-color: rgb(60, 59, 61) ;
+}
+
+.casos-recuperados,
+.casos-fallecidos,
+.casos-na {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  width: 150px;
+  color: white;
+
+}
+
+.casos-recuperados-img,
+.casos-fallecidos-img,
+.casos-na-img {
+  width: 70px;  
+}
+
+/* filters*/
+.filters {
+  padding: 10px;
+}
+
+select {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0px;
+  width: 100%;
+  padding: 3px;
+}
+
+/*tabla*/
+.content {
+  overflow-x: auto;
+}
+
+.tabla-pacientes{
+  background-color:white;  
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.table-header{
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 2px 18px;
+  align-items: center;  
+}
+.paginacion, 
+.indicadores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.indicadores div {
+  padding: 5px;
+  width: 20px;
+}
+#anterior,
+#siguiente {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+#anterior:disabled,
+#siguiente:disabled {
+    background-color: #555555;
+}
+
+@media ( min-width: 500px) {
+  .widgets {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+

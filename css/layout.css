@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(225, 231, 231);
+}
+
+.main-nav {
+  grid-area: nav;
+  background-color: rgb(225, 231, 231);
+}
+
+.widgets {
+  grid-area: widgets;
+  /* background-color: brown; */
+}
+
+.filters {
+  grid-area: filters;
+  /* background-color: chartreuse; */
+}
+
+.content {
+  grid-area: content;
+  /* background-color: deeppink; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "widgets"
+  "filters"
+  "content";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header  header"
+    "nav     nav"
+    "widgets widgets"
+    "filters content";
+  }
+}
